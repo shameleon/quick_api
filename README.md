@@ -1,13 +1,18 @@
-# quick_api
-Making my own piscine for `FastAPI framework`.
-I am creating a set of very first API's using the FastAPI framework in Python. 
+# Quick-api
+Making my own piscine to learn how to use `FastAPI framework`.
+For that purpose, I am creating a set of very first `API`'s using the `FastAPI` framework in Python. 
 
-## part00
-### install
+## Part00
+### Install
 from a *virtual environement*
 `pip install "fastapi[all]"`
 
-### tutorial 00:
-creating a first API 
+### Tutorial 00: Random numbers
+creating a first API based on [Idently youtube channel : Tutorial](https://youtu.be/F43rgxq4CKw?si=AzBHAcDrQaDBRlVg)
 
-[Fast API tutorial - install](https://fastapi.tiangolo.com/tutorial/)
+
+
+### gGlossary
+||||
+|---|---|---|
+|API| application programming interface|
