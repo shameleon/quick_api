@@ -28,7 +28,7 @@ async def update_todo(id: int, body: dict) -> dict:
             return {"data": f'todo #{id} has been updated'}
     return {"data": f'todo #{id} was not found !'}
 
-# DELETE
+# DELETE -> delete todo
 @app.delete("/todo/{id}", tags=["todos"])
 async def delete_todo(id: int) -> dict:
     for todo in todos:
@@ -46,6 +46,4 @@ todos = [
     "id": "2",
     "activity": "Writting 3 pages of my novel at 2:00 PM."
 }
-
-
 ]
