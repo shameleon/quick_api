@@ -11,8 +11,7 @@ from a *virtual environement*
 creating a first API based on [Idently youtube channel : Tutorial](https://youtu.be/F43rgxq4CKw?si=AzBHAcDrQaDBRlVg)
 
 
-
-### gGlossary
+### Glossary
 ||||
 |---|---|---|
 |API| application programming interface|
