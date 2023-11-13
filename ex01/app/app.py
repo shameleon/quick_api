@@ -1,34 +1,25 @@
 from fastapi import FastAPI
-from typing import Optional
+from typing import Optional, Union
 from pydantic import BaseModel
 
 app = FastAPI()
 
-class Coord(BaseModel):
-    lat: float
-    lon: float
-    zoom: Optional[int]
+class Item(BaseModel):
+    name: str
+    price: float
+    is_offer: Union[bool, None] = None
 
 # minimal app GET request
 @app.get("/")
 async def root() -> dict:
     return {"Hello" : "World"}
 
-
 # GET --> Read todo
-
-@app.get("/positions/")
-async def get_all_positions() -> dict:
-    return {"positions": positions}
-
-@app.get("/positions/{id}")
-async def get_position(id: int) -> dict:
-    return positions[id]
+@app.get("/items/{item_id}")
+def read_item(item_id: int, q: Union[str, None] = None):
+    return {"item_id": item_id, "q": q}
 
 # POST -> Create todo
-@app.post("/position/")
-async def add_postion(coord: Coord) -> dict:
-    positions.append(coord)
-    return {"data": "Position has been added"}
-
-positions = []
+@app.put("/items/{item_id}")
+def update_item(item_id: int, item: Item):
+    return {"item_name": item.name, "item_id": item_id}
