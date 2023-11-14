@@ -7,7 +7,9 @@ For that purpose, I am following tutorials buiding basic `API`'s using `FastAPI`
 
 - [FastAPI](#FastAPI)
     - [Install](#Install)
-    - [Ex00 :  basic CRUD](#Tutorial_00:_basic-CRUD)
+    - [Ex00-basic CRUD with FastAPI](#ex00-basic-CRUD)
+    - [Ex01-recipes using pydantic](#ex01-recipes)
+    - [Ex02-users](#ex02-users)
     - [Glossary](#Glossary)
 
 ## FastAPI
@@ -29,7 +31,7 @@ Then from a web browser, open local page `127.0.0.1:8000`:
 
 `localhost:8000/docs` to open requests
 
-### ex00:_basic-CRUD
+### ex00-basic-CRUD
 
 Creating a first basic CRUD API from the following video
 [FastAPI Crash Course 2021 For Beginners, Bek Brace channel](https://youtu.be/62pP9pfzNRs?si=W-1WD)
@@ -52,10 +54,15 @@ app = FastAPI()
 @app.delete("/todo/{id}", tags=["todos"])
 ```
 
-### ex01:_
+### ex01-recipes
 
 [pydantic docs](https://docs.pydantic.dev/latest/)
 
+[](https://christophergs.com/tutorials/ultimate-fastapi-tutorial-pt-4-pydantic-schemas/)
+
+# ex02-users
+
+[sql](https://fastapi.tiangolo.com/tutorial/sql-databases/)
 [](https://www.youtube.com/watch?v=7D_0JTeaKWg)
 [](https://www.youtube.com/watch?v=SORiTsvnU28)
 
