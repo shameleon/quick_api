@@ -10,9 +10,14 @@ code from
 https://christophergs.com/tutorials/ultimate-fastapi-tutorial-pt-4-pydantic-schemas/
 https://github.com/ChristopherGS/ultimate-fastapi-tutorial/blob/main/part-04-pydantic-schemas/app/main.py
 """
+
+# instantiate a FastAPI app object, which is a Python class that provides all the functionality for your API.
 app = FastAPI(title="Recipe API", openapi_url="/openapi.json")
 
+# instantiate an APIRouter which is how we can group our API endpoints (and specify versions and other config which we will look at later)
 api_router = APIRouter()
+
+# basic GET endpoint for our API.
 @api_router.get("/", status_code=200)
 def root() -> dict:
     """

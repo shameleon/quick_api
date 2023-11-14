@@ -59,6 +59,8 @@ app = FastAPI()
 
 [pydantic docs](https://docs.pydantic.dev/latest/)
 
+[ChristopherGS The ultimate FastAPI tutorial](https://christophergs.com/tutorials/ultimate-fastapi-tutorial-pt-1-hello-world/)
+
 [](https://christophergs.com/tutorials/ultimate-fastapi-tutorial-pt-4-pydantic-schemas/)
 
 ### ex02-users
