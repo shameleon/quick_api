@@ -10,6 +10,7 @@ For that purpose, I am following tutorials buiding basic `API`'s using `FastAPI`
     - [Ex00-basic CRUD with FastAPI](#ex00-basic-CRUD)
     - [Ex01-recipes using pydantic](#ex01-recipes)
     - [Ex02-users](#ex02-users)
+- [Bottle](#Bottle)
     - [Glossary](#Glossary)
 
 ## FastAPI
@@ -60,12 +61,19 @@ app = FastAPI()
 
 [](https://christophergs.com/tutorials/ultimate-fastapi-tutorial-pt-4-pydantic-schemas/)
 
-# ex02-users
+### ex02-users
 
 [sql](https://fastapi.tiangolo.com/tutorial/sql-databases/)
 [](https://www.youtube.com/watch?v=7D_0JTeaKWg)
 [](https://www.youtube.com/watch?v=SORiTsvnU28)
 
+## Bottle
+
+Bottle is a fast, simple and lightweight WSGI micro web-framework for Python.
+
+[Bottle](https://bottlepy.org/docs/dev/)
+
+## References
 ### Glossary
 ||||
 |---|---|---|
