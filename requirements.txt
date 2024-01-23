@@ -1,0 +1,6 @@
+virtualenv==20.24.2
+fastapi==0.109.0
+pydantic==2.5.3
+pydantic_core==2.14.6
+uvicorn==0.27.0
+flake8==6.0.0
