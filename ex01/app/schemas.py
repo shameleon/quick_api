@@ -4,7 +4,7 @@ from typing import Sequence
 class Recipe(BaseModel):
     id: int
     label: str
-    source: str
+    source: str | None = None
     url: HttpUrl
 
 class RecipeSearchResults(BaseModel):
@@ -12,6 +12,6 @@ class RecipeSearchResults(BaseModel):
 
 class RecipeCreate(BaseModel):
     label: str
-    source: str
+    source: str | None = None
     url: HttpUrl
     submitter_id: int
