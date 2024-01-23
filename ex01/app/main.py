@@ -1,6 +1,8 @@
 from fastapi import FastAPI, APIRouter, Query
 from app.schemas import RecipeSearchResults, Recipe, RecipeCreate
 from app.recipe_data import RECIPES
+# from schemas import RecipeSearchResults, Recipe, RecipeCreate
+# from recipe_data import RECIPES
 from typing import Optional
 
 
@@ -26,7 +28,7 @@ def root() -> dict:
     return {"msg": "Hello, World!"}
 
 
-# Updated using to use a response_model
+# Uses a response_model
 # https://fastapi.tiangolo.com/tutorial/response-model/
 @api_router.get("/recipe/{recipe_id}", status_code=200, response_model=Recipe)
 def fetch_recipe(*, recipe_id: int) -> dict:
@@ -53,7 +55,6 @@ def search_recipes(
         # we use Python list slicing to limit results
         # based on the max_results query parameter
         return {"results": RECIPES[:max_results]}
-
     results = filter(lambda recipe: keyword.lower() in recipe["label"].lower(), RECIPES)
     return {"results": list(results)[:max_results]}
 
@@ -76,12 +77,14 @@ def create_recipe(*, recipe_in: RecipeCreate) -> dict:
 
     return recipe_entry
 
-
+# We use the include_router method of the app object 
+# to register the router we created in step 2 on the FastAPI object.
 app.include_router(api_router)
 
 
 if __name__ == "__main__":
     # Use this for debugging purposes only
+    # wwith module called directly
     import uvicorn
 
     uvicorn.run(app, host="0.0.0.0", port=8001, log_level="debug")

@@ -28,9 +28,16 @@ from a *virtual environement* setup:
 (venv)➜ python main.py
 ```
 
+### Swagger UI
+
 Then from a web browser, open local page `127.0.0.1:8000`:
 
 `localhost:8000/docs` to open requests
+
+### Pydantic
+
+Data validation and settings management using python type annotations.
+[Fastapi : request body with pydantic](https://fastapi.tiangolo.com/tutorial/body/)
 
 ### ex00-basic-CRUD
 
@@ -57,6 +64,7 @@ app = FastAPI()
 
 ### ex01-recipes
 
+To declare a request body, you use Pydantic models with all their power and benefits.
 [pydantic docs](https://docs.pydantic.dev/latest/)
 
 [ChristopherGS The ultimate FastAPI tutorial](https://christophergs.com/tutorials/ultimate-fastapi-tutorial-pt-1-hello-world/)
