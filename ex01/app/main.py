@@ -11,6 +11,9 @@ tutorial
 code from 
 https://christophergs.com/tutorials/ultimate-fastapi-tutorial-pt-4-pydantic-schemas/
 https://github.com/ChristopherGS/ultimate-fastapi-tutorial/blob/main/part-04-pydantic-schemas/app/main.py
+
+Recipe response model is imported from a new schemas.py file.
+
 """
 
 # instantiate a FastAPI app object, which is a Python class that provides all the functionality for your API.
@@ -73,7 +76,7 @@ def create_recipe(*, recipe_in: RecipeCreate) -> dict:
         source=recipe_in.source,
         url=recipe_in.url,
     )
-    RECIPES.append(recipe_entry.dict())
+    RECIPES.append(recipe_entry.model_dump())
 
     return recipe_entry
 

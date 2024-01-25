@@ -17,6 +17,19 @@ For that purpose, I am following tutorials buiding basic `API`'s using `FastAPI`
 
 [FastAPI docs](https://fastapi.tiangolo.com/)
 
+[FastAPI’s Performance](https://christophergs.com/python/2021/06/16/python-flask-fastapi/)
+
+FastAPI is built on top of Starlette, an ASGI (Asynchronous Server Gateway Interface) framework.
+
+As `Flask`, `FastAPI` use decorators to mark `endpoints`.
+
+For FastAPI, the recommended choice for an ASGI web server : `uvicorn`.
+
+`Pydantic` is a library for data validation, Defining API config
+and API requests/responses (JSON schemas).
+
+`SwaggerUI` for documentation UI display.
+
 ### Install
 
 from a *virtual environement* setup:
