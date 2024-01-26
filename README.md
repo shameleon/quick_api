@@ -13,6 +13,11 @@ For that purpose, I am following tutorials buiding basic `API`'s using `FastAPI`
 - [Bottle](#Bottle)
     - [Glossary](#Glossary)
 
+## Best backend web frameworks
+
+According to [Slant](https://www.slant.co), `fastAPI` is ranked #4 as [Best backend web frameworks](https://www.slant.co/topics/362/~best-backend-web-frameworks) and #1 as [Best Python asynchronous web frameworks](https://www.slant.co/topics/3173/~best-python-asynchronous-web-frameworks).
+
+
 ## FastAPI
 
 [FastAPI docs](https://fastapi.tiangolo.com/)
